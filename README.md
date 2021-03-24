@@ -3,8 +3,9 @@ Aplicação desenvolvida com objetivo de aplicar técnicas de segurança em APIs
 
 ## Informações da Aplicação
 
- - Implementado recursos de Autenticação e Autorização utilizando Flask e Flask Restful.
-
+ - CRUD completo de clientes com validação tanto no front-end quanto no back-end
+ 
+ - Internacionalização da Aplicação
 
 #### Ferramentas e Principais Libs utilizadas para desenvolvimento:
   - Python
