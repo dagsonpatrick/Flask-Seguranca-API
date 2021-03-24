@@ -7,7 +7,9 @@ from datetime import timedelta
 from api import api, jwt
 
 class LoginList(Resource):
+
     #@jwt.user_claims_loader
+    @jwt.additional_claims_loader
     def add_claims_to_access_token(identity):
         usuario_token = usuario_service.listar_usuario_id(identity)
         if usuario_token.is_admin:
@@ -28,7 +30,7 @@ class LoginList(Resource):
             if usuario_bd and usuario_bd.ver_senha(senha):
                 access_token = create_access_token(
                     identity=usuario_bd.id,
-                    expires_delta=timedelta(seconds=100)
+                    expires_delta=timedelta(seconds=300)
                 )
                 refresh_token = create_refresh_token(
                     identity=usuario_bd.id

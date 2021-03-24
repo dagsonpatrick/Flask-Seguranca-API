@@ -1,6 +1,6 @@
 from api import app
 
-# set FLASK_APP=run
+# set FLASK_APP=api
 # flask run
 # flask db init
 # flask db migrate
