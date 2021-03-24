@@ -4,8 +4,6 @@ from ..schemas import tarefa_schema
 from flask import request, make_response, jsonify
 from ..entidades import tarefa
 from ..services import tarefa_service
-from ..models.tarefa_model import Tarefa
-from flask_jwt_extended import jwt_required
 from ..meus_decorators import admin_required, api_key_required
 
 class TarefaList(Resource):
@@ -16,8 +14,7 @@ class TarefaList(Resource):
         ts = tarefa_schema.TarefaSchema(many=True)
         return make_response(ts.jsonify(tarefas), 200)
 
-    @jwt_required
-    #@admin_required
+    @admin_required
     def post(self):
         ts = tarefa_schema.TarefaSchema()
         validate = ts.validate(request.json)
