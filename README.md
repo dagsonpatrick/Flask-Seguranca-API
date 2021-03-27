@@ -11,7 +11,7 @@ Aplicação desenvolvida com objetivo de aplicar técnicas de segurança em APIs
   - Python
   - IDE PyCharm Community Edition
   - Flask
-  - Flask-RESTful
+  - Flask-RESTful 
   - Flask-JWT
   - Flask-JWT-Extended
   - SQLAlchemy
