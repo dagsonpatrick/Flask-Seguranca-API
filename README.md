@@ -1,5 +1,3 @@
-
-<<<<<<< HEAD
 ## Informações da Aplicação
 
  - CRUD completo de clientes com validação tanto no front-end quanto no back-end
@@ -29,5 +27,5 @@
     - Services
     - Views
   - Migrations
-=======
->>>>>>> 892d0b8828337b6e422a68ece049120da94b2d34
+
+
