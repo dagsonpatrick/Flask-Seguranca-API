@@ -1,6 +1,5 @@
-# Flask Segurança em APIs
-Aplicação desenvolvida com objetivo de aplicar técnicas de segurança em APIs desenvolvidas no microframework Flask.
 
+<<<<<<< HEAD
 ## Informações da Aplicação
 
  - CRUD completo de clientes com validação tanto no front-end quanto no back-end
@@ -30,3 +29,5 @@ Aplicação desenvolvida com objetivo de aplicar técnicas de segurança em APIs
     - Services
     - Views
   - Migrations
+=======
+>>>>>>> 892d0b8828337b6e422a68ece049120da94b2d34
